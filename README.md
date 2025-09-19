@@ -1,25 +1,43 @@
-# autocorrelation_power_spectrum
-Autocorrelation and Power Spectrum Analysis Script
+# Autocorrelation & Power Spectrum Analysis
 
-This Python script performs an analysis of a random signal's autocorrelation and power spectrum using NumPy and Matplotlib.
+This Python script analyzes a random signal by computing its **autocorrelation** and **power spectrum** using NumPy and Matplotlib.
 
--Autocorrelation: Measures how similar a signal is with a lagged version of itself, providing insight into patterns and periodicity within the data.
--Power Spectrum: Displays the distribution of power (or signal strength) over frequency, revealing the dominant frequencies in the signal.
+---
 
-How it Works
+##  Overview
 
--Generate Signal: The script generates a random signal of 1000 values using a uniform distribution.
--Calculate Autocorrelation: Using the autocorrelation() function, the autocorrelation of the signal is calculated.
--Compute Power Spectrum: Applies the Fast Fourier Transform (FFT) on the autocorrelation to determine the power spectrum.
-Plot Results:
-        Autocorrelation Plot: Shows the autocorrelation as a function of lag.
-        Power Spectrum Plot: Visualizes the power spectrum against frequency, limited to positive frequencies.
+- **Autocorrelation**: Measures how similar a signal is to a lagged version of itself, revealing patterns and periodicity.  
+- **Power Spectrum**: Shows the distribution of power (signal strength) across frequencies, highlighting dominant components.
 
-Dependencies
+---
 
--NumPy: For numerical operations and FFT.
--Matplotlib: For generating visualizations.
+## ⚙️ How It Works
 
-Usage
+1. **Generate Signal**  
+   Creates a random signal of 1000 values using a uniform distribution.  
 
-Simply run the script, and it will display the autocorrelation and power spectrum plots.
+2. **Calculate Autocorrelation**  
+   The `autocorrelation()` function computes the autocorrelation of the signal.  
+
+3. **Compute Power Spectrum**  
+   Uses the **Fast Fourier Transform (FFT)** of the autocorrelation to obtain the power spectrum.  
+
+4. **Plot Results**  
+   - **Autocorrelation Plot**: Autocorrelation vs. lag  
+   - **Power Spectrum Plot**: Power spectrum vs. frequency (positive frequencies only)  
+
+---
+
+## Dependencies
+
+- [NumPy](https://numpy.org/) — numerical operations and FFT  
+- [Matplotlib](https://matplotlib.org/) — plotting and visualization  
+
+---
+
+## ▶ Usage
+
+Run the script directly:
+
+```bash
+python autocorrelation_power_spectrum.py
